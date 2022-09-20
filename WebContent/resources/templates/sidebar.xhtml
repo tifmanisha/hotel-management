@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pe="http://primefaces.org/ui/extensions">
+	
+	<h:body>
+      <ui:composition> 
+         <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+	      <div class="position-sticky pt-5" style="margin-top: 15px">
+	        <ul class="nav flex-column">
+	          <li class="nav-item shadow-sm p-1 mb-4 bg-body rounded">
+	            <a class="nav-link text-uppercase fs-5" href="index.xhtml">
+	              <span class="">
+	              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+					  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+					</svg> -->
+					<ion-icon name="home-outline"></ion-icon>
+	              </span>
+	              Dashboard
+	            </a>
+	          </li>
+	          <li class="nav-item shadow-sm p-1 mb-4 bg-body rounded">
+	            <a class="nav-link text-uppercase fs-5" href="booking.xhtml">
+	              <span>
+	              		<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+						  <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+						</svg> -->
+						<ion-icon name="document-outline"></ion-icon>
+	              </span>
+	              Bookings
+	            </a>
+	          </li>
+	          <li class="nav-item shadow-sm p-1 mb-4 bg-body rounded">
+	            <a class="nav-link text-uppercase fs-5" href="room.xhtml">
+	              <span>
+	              		<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file" viewBox="0 0 16 16">
+						  <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+						</svg> -->
+						<ion-icon name="bed-outline"></ion-icon>
+	              </span>
+	              Rooms
+	            </a>
+	          </li>
+	          <li class="nav-item shadow-sm p-1 mb-4 bg-body rounded">
+	            <a class="nav-link text-uppercase fs-5 " href="customer.xhtml">
+	              <span>
+	              		<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+						  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+						</svg> -->
+						<ion-icon name="people-outline"></ion-icon>
+	              </span>
+	              Customers
+	            </a>
+	          </li>
+	          <li class="nav-item shadow-sm p-1 mb-4 bg-body rounded">
+	            <a class="nav-link text-uppercase fs-5" href="user.xhtml">
+	              <span>
+	              		<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+							  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+							</svg>-->
+							<ion-icon name="person-outline"></ion-icon>
+	              </span>
+	              Users
+	            </a>
+	          </li>
+	          <!-- <li class="nav-item">
+	            <a class="nav-link text-uppercase collapsed" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target="#booking-collapse" aria-expanded="false">
+	              <span data-feather="file" class="align-text-bottom"></span>
+	              Bookings
+	            </a>
+	            <div class="collapse" id="booking-collapse">
+		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+			          <li><a class="nav-link" href="addbooking.xhtml">
+			          	<span class="align-text-bottom"></span>New</a></li>
+			          <li><a class="nav-link" href="booking.xhtml">
+			          	<span class="align-text-bottom"></span>All Bookings</a></li>
+		            </ul>
+		        </div>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link text-uppercase collapsed" href="room.xhtml" data-bs-toggle="collapse" data-bs-target="#room-collapse" aria-expanded="false">
+	              <span data-feather="shopping-cart" class="align-text-bottom"></span>
+	              Rooms
+	            </a>
+	            <div class="collapse" id="room-collapse">
+		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+			          <li><a class="nav-link" href="addroom.xhtml">
+			          	<span class="align-text-bottom"></span>New</a></li>
+			          <li><a class="nav-link" href="room.xhtml">
+			          	<span class="align-text-bottom"></span>All Rooms</a></li>
+			          <li><a class="nav-link" href="freeroom.xhtml">
+			          	<span class="align-text-bottom"></span>Free Rooms</a></li>
+			          <li><a class="nav-link" href="occupiedroom.xhtml">
+			          	<span class="align-text-bottom"></span>Occupied Rooms</a></li>
+		            </ul>
+		        </div>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link text-uppercase collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#customer-collapse" aria-expanded="false">
+	              <span class="align-text-bottom" ></span>
+	              Customers
+	            </a>
+	            <div class="collapse" id="customer-collapse">
+		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+			          <li><a class="nav-link" href="addcustomer.xhtml">
+			          	<span class="align-text-bottom"></span>New</a></li>
+			          <li><a class="nav-link" href="customer.xhtml">
+			          	<span class="align-text-bottom"></span>All Customers</a></li>
+		            </ul>
+		        </div>
+	          </li>
+	        </ul>
+	
+	        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-5 mb-1 text-muted text-uppercase">
+	          <span>Account</span>
+	          <a class="link-secondary" href="#" aria-label="Add a new report">
+	            <span data-feather="plus-circle" class="align-text-bottom"></span>
+	          </a>
+	        </h6>
+	        <ul class="nav flex-column mb-2">
+	          <li class="nav-item">
+	            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#user-collapse" aria-expanded="false">
+	              <span data-feather="shopping-cart" class="align-text-bottom"></span>
+	              Users
+	            </a>
+	            <div class="collapse" id="user-collapse">
+		          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+			          <li><a class="nav-link" href="adduser.xhtml">
+			          	<span class="align-text-bottom"></span>New</a></li>
+			          <li><a class="nav-link" href="user.xhtml">
+			          	<span class="align-text-bottom"></span>All Users</a></li>
+		            </ul>
+		        </div>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">
+	              <span data-feather="file-text" class="align-text-bottom"></span>
+	              Profile
+	            </a>
+	          </li> -->
+	        </ul>
+	      </div>
+	    </nav>
+      </ui:composition>	
+   </h:body>
+   
+</html>
